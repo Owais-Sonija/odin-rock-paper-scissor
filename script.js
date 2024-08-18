@@ -26,7 +26,7 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
   // your code here!
-    numOfGames++;
+numOfGames++;    
 
   if (humanChoice == "rock" && computerChoice == "paper") {
     console.log("You lose! Paper beats Rock");
@@ -79,3 +79,14 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+for (let i = 0; i < 5; i++) {
+    
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    
+    playRound(humanSelection, computerSelection);
+    
+}
+
+    
