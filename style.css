@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rebeccapurple ;
+    font-family: "Edu VIC WA NT Beginner",  Courier, monospace;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.image_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.image_box img{
+ border-radius: 50%;   
+ box-shadow: 4px 4px 20px 10px;
+ cursor: pointer;
+ transition: transform 300ms ease-in-out;
+}
+
+.image_box img:hover{
+ box-shadow: 6px 6px 25px 12px;
+ transform: scale(1.05);
+}
+
+.winner {
+    color: rgb(44, 223, 44);
+}
+.loser {
+    color: rgb(247, 76, 76);
+}
+
+.disappear {
+    display: none;
+}
